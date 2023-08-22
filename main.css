@@ -1,0 +1,176 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 100%;
+} 
+
+header, nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background-color: #8C5845;
+    color: #D9AB9A;
+    padding: 16px 16px;
+}
+
+.cesta-icon {
+    float: right;
+    height: 25px;
+    margin-left: 8px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 40px;
+    font-size: 1.5em;
+}
+
+nav ul li a {
+    color: #D9AB9A;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+section {
+    max-width: 1024px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.image-loja {
+    height: 400px;
+    margin-right: 16px;
+}
+
+section .sobre-a-loja {
+    display: flex;
+}
+
+section p {
+    margin-top: 16px;
+}
+
+.descricao-loja p {
+    font-family: 'Bad Script', cursive;
+}
+
+.divLivros {
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    column-gap: 1%;
+}
+
+.livros img {
+    max-width: 100%;
+}
+
+section > h2 {
+    margin-bottom: 40px;
+    border-top: 2px solid #8C5845;
+    border-bottom: 2px solid #8C5845;
+    color: #D9AB9A;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.livros h3 {
+    padding: 8px 0;
+    font-size: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #8C5845;
+    cursor: pointer;
+}
+
+.livros button {
+    padding: 8px;
+    background-color: #8C5845;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.rodape {
+    background-color: #ccc;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodape p {
+    opacity: calc(0.5);
+}
+
+.icon li img {
+    height: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px) { /* Celulares */
+
+    header, nav .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section .sobre-a-loja {
+        display: block;
+    }
+
+    .descricao-loja h2 {
+        margin-top: 25px;
+    }
+
+    .image-loja {
+        margin: 0px 0;
+    }
+
+    .divLivros {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) { /* Tablets */
+
+    section .sobre-a-loja {
+        display: block;
+    }
+
+    .image-loja {
+        margin: 0px 0;
+    }
+
+    .descricao-loja h2 {
+        margin-top: 25px;
+    }
+
+    .divLivros {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 1%;
+    }
+} 
