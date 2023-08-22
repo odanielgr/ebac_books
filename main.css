@@ -5,6 +5,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    background-color: red;
+}
+
 .container {
     width: 100%;
 } 
@@ -132,6 +136,10 @@ ul li a {
 
 @media screen and (max-width: 767px) { /* Celulares */
 
+    header .container {
+        max-width: 100%;
+    }
+
     header, nav .container {
         display: flex;
         flex-direction: column;
@@ -147,11 +155,16 @@ ul li a {
 
     .image-loja {
         margin: 0px 0;
+        width: 100%;
     }
 
     .divLivros {
         display: block;
     }
+
+ /*   .livros img {
+        width: 100%;
+    } */
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) { /* Tablets */
@@ -162,6 +175,7 @@ ul li a {
 
     .image-loja {
         margin: 0px 0;
+        width: 100%;
     }
 
     .descricao-loja h2 {
